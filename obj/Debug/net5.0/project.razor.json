@@ -15624,6 +15624,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\Movies\\Index.cshtml",
+      "TargetPath": "Views\\Movies\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -15631,6 +15636,16 @@
     {
       "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\Movies\\Delete.cshtml",
+      "TargetPath": "Views\\Movies\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\Movies\\Edit.cshtml",
+      "TargetPath": "Views\\Movies\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15656,6 +15671,16 @@
     {
       "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\Movies\\Details.cshtml",
+      "TargetPath": "Views\\Movies\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\Movies\\Create.cshtml",
+      "TargetPath": "Views\\Movies\\Create.cshtml",
       "FileKind": "mvc"
     }
   ],
