@@ -13,4 +13,12 @@ using MvcMovie.Models;
         }
 
         public DbSet<MvcMovie.Models.Movie> Movie { get; set; }
+
+        public DbSet<MvcMovie.Models.Person> Person { get; set; }
+
+        public DbSet<MvcMovie.Models.Student> Student { get; set; }
+
+        public DbSet<MvcMovie.Models.Employee> Employee { get; set; }
+
+        public DbSet<MvcMovie.Models.Product> Product { get; set; }
     }
