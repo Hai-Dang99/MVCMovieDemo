@@ -4,8 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using MvcMovie.Models;
-
-    public class ApplicationDBContext : DbContext
+namespace MVCMovie.Data
+{
+      public class ApplicationDBContext : DbContext
     {
         public ApplicationDBContext (DbContextOptions<ApplicationDBContext> options)
             : base(options)
@@ -22,3 +23,7 @@ using MvcMovie.Models;
 
         public DbSet<MvcMovie.Models.Product> Product { get; set; }
     }
+
+}
+
+  
