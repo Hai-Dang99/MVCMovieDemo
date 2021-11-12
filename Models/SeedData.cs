@@ -1,18 +1,18 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using MvcMovie.Data;
+using MVCMovie.Data;
 using System;
 using System.Linq;
 
-namespace MvcMovie.Models
+namespace MVCMovie.Models
 {
     public static class SeedData
     {
         public static void Initialize(IServiceProvider serviceProvider)
         {
-            using (var context = new MvcMovieContext(
+            using (var context = new ApplicationDBContext(
                 serviceProvider.GetRequiredService<
-                    DbContextOptions<MvcMovieContext>>()))
+                    DbContextOptions<ApplicationDBContext>>()))
             {
                 // Look for any movies.
                 if (context.Movie.Any())
