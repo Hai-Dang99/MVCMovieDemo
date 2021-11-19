@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.Generic;
 
 namespace MVCMovie.Models
 {
@@ -9,8 +10,9 @@ namespace MVCMovie.Models
     {
         [Key]
         [Display(Name ="ID")]
-        public string CategoryID { get; set; }
+        public int CategoryID { get; set; }
         [Display(Name ="Họ và tên")]
         public string CategoryName { get; set; }
+        public ICollection<LHD> LHDs { get; set; }
     }
 }

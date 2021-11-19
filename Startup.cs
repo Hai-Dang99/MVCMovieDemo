@@ -42,6 +42,7 @@ namespace MVCMovie
             }
         });
 
+
         //     services.AddDbContext<ApplicationDBContext>(options =>
         //             options.UseSqlite(Configuration.GetConnectionString("ApplicationDBContext")));
          }

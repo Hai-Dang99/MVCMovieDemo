@@ -15624,6 +15624,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\LHD\\Edit.cshtml",
+      "TargetPath": "Views\\LHD\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -15634,8 +15639,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\LHD\\Details.cshtml",
+      "TargetPath": "Views\\LHD\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\Movies\\Index.cshtml",
       "TargetPath": "Views\\Movies\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\LHD\\Index.cshtml",
+      "TargetPath": "Views\\LHD\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15646,6 +15661,11 @@
     {
       "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\Employee\\Delete.cshtml",
       "TargetPath": "Views\\Employee\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\Category\\Edit.cshtml",
+      "TargetPath": "Views\\Category\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15661,6 +15681,11 @@
     {
       "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\Student\\Delete.cshtml",
       "TargetPath": "Views\\Student\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\Category\\Create.cshtml",
+      "TargetPath": "Views\\Category\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15701,6 +15726,11 @@
     {
       "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\LHD\\Delete.cshtml",
+      "TargetPath": "Views\\LHD\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15764,6 +15794,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\Category\\Delete.cshtml",
+      "TargetPath": "Views\\Category\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\Student\\Index.cshtml",
       "TargetPath": "Views\\Student\\Index.cshtml",
       "FileKind": "mvc"
@@ -15794,8 +15829,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\Category\\Index.cshtml",
+      "TargetPath": "Views\\Category\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\Product\\Delete.cshtml",
       "TargetPath": "Views\\Product\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\Category\\Details.cshtml",
+      "TargetPath": "Views\\Category\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\H-SKY\\Netcore\\MVCMovie\\Views\\LHD\\Create.cshtml",
+      "TargetPath": "Views\\LHD\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
