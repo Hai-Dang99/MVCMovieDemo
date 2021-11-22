@@ -206,3 +206,13 @@ C:\Users\H-SKY\Netcore\MVCMovie\obj\Debug\net5.0\Razor\Views\LHD\Delete.cshtml.g
 C:\Users\H-SKY\Netcore\MVCMovie\obj\Debug\net5.0\Razor\Views\LHD\Details.cshtml.g.cs
 C:\Users\H-SKY\Netcore\MVCMovie\obj\Debug\net5.0\Razor\Views\LHD\Edit.cshtml.g.cs
 C:\Users\H-SKY\Netcore\MVCMovie\obj\Debug\net5.0\Razor\Views\LHD\Index.cshtml.g.cs
+C:\Users\H-SKY\Netcore\MVCMovie\obj\Debug\net5.0\Razor\Views\HD\Create.cshtml.g.cs
+C:\Users\H-SKY\Netcore\MVCMovie\obj\Debug\net5.0\Razor\Views\HD\Delete.cshtml.g.cs
+C:\Users\H-SKY\Netcore\MVCMovie\obj\Debug\net5.0\Razor\Views\HD\Details.cshtml.g.cs
+C:\Users\H-SKY\Netcore\MVCMovie\obj\Debug\net5.0\Razor\Views\HD\Edit.cshtml.g.cs
+C:\Users\H-SKY\Netcore\MVCMovie\obj\Debug\net5.0\Razor\Views\HD\Index.cshtml.g.cs
+C:\Users\H-SKY\Netcore\MVCMovie\obj\Debug\net5.0\Razor\Views\NLN\Create.cshtml.g.cs
+C:\Users\H-SKY\Netcore\MVCMovie\obj\Debug\net5.0\Razor\Views\NLN\Delete.cshtml.g.cs
+C:\Users\H-SKY\Netcore\MVCMovie\obj\Debug\net5.0\Razor\Views\NLN\Details.cshtml.g.cs
+C:\Users\H-SKY\Netcore\MVCMovie\obj\Debug\net5.0\Razor\Views\NLN\Edit.cshtml.g.cs
+C:\Users\H-SKY\Netcore\MVCMovie\obj\Debug\net5.0\Razor\Views\NLN\Index.cshtml.g.cs

@@ -25,6 +25,10 @@ namespace MVCMovie.Data
          public DbSet<MVCMovie.Models.Young> Youngs { get; set; }
          public DbSet<MVCMovie.Models.Category> Category { get; set; }
          public DbSet<MVCMovie.Models.LHD> LHD { get; set; }
+         public DbSet<MVCMovie.Models.HD> HD { get; set; }
+         public DbSet<MVCMovie.Models.NLN> NLN_1 { get; set; }
+         public DbSet<MVCMovie.Models.DT> DT { get; set; }
+         
     }
 
 }

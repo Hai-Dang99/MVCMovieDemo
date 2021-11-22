@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVCMovie.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20211119095212_Create_Table_Category_LHD")]
-    partial class Create_Table_Category_LHD
+    [Migration("20211122021555_Hd")]
+    partial class Hd
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -32,6 +32,25 @@ namespace MVCMovie.Migrations
                     b.ToTable("Categois");
                 });
 
+            modelBuilder.Entity("MVCMovie.Models.DT", b =>
+                {
+                    b.Property<int>("DTID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("DTName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("LHLID")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("DTID");
+
+                    b.HasIndex("LHLID");
+
+                    b.ToTable("DTs");
+                });
+
             modelBuilder.Entity("MVCMovie.Models.Employee", b =>
                 {
                     b.Property<string>("EmployeeID")
@@ -46,6 +65,25 @@ namespace MVCMovie.Migrations
                     b.HasKey("EmployeeID");
 
                     b.ToTable("Employee");
+                });
+
+            modelBuilder.Entity("MVCMovie.Models.HD", b =>
+                {
+                    b.Property<string>("HDID")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("HDName")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("HDID");
+
+                    b.ToTable("HDs");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("HD");
                 });
 
             modelBuilder.Entity("MVCMovie.Models.LHD", b =>
@@ -65,6 +103,20 @@ namespace MVCMovie.Migrations
                     b.HasIndex("CategoryID");
 
                     b.ToTable("LHDs");
+                });
+
+            modelBuilder.Entity("MVCMovie.Models.LHL", b =>
+                {
+                    b.Property<int>("LHLID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("LHLName")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("LHLID");
+
+                    b.ToTable("LHLs");
                 });
 
             modelBuilder.Entity("MVCMovie.Models.Movie", b =>
@@ -144,6 +196,21 @@ namespace MVCMovie.Migrations
                     b.ToTable("Student");
                 });
 
+            modelBuilder.Entity("MVCMovie.Models.NLN", b =>
+                {
+                    b.HasBaseType("MVCMovie.Models.HD");
+
+                    b.Property<string>("NLNID")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("University")
+                        .HasColumnType("TEXT");
+
+                    b.ToTable("HDs");
+
+                    b.HasDiscriminator().HasValue("NLN");
+                });
+
             modelBuilder.Entity("MVCMovie.Models.Young", b =>
                 {
                     b.HasBaseType("MVCMovie.Models.Person");
@@ -157,6 +224,17 @@ namespace MVCMovie.Migrations
                     b.ToTable("Person");
 
                     b.HasDiscriminator().HasValue("Young");
+                });
+
+            modelBuilder.Entity("MVCMovie.Models.DT", b =>
+                {
+                    b.HasOne("MVCMovie.Models.LHL", "LHL")
+                        .WithMany("DTs")
+                        .HasForeignKey("LHLID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("LHL");
                 });
 
             modelBuilder.Entity("MVCMovie.Models.LHD", b =>
@@ -173,6 +251,11 @@ namespace MVCMovie.Migrations
             modelBuilder.Entity("MVCMovie.Models.Category", b =>
                 {
                     b.Navigation("LHDs");
+                });
+
+            modelBuilder.Entity("MVCMovie.Models.LHL", b =>
+                {
+                    b.Navigation("DTs");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,0 +1,36 @@
+@model MVCMovie.Models.NLN
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>NLN</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NLNID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NLNID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.University)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.University)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HDName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HDName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.HDID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
