@@ -20,10 +20,34 @@ namespace MVCMovie.Controllers
         }
 
         // GET: Person
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Person.ToListAsync());
-        }
+       public async Task<IActionResult> Index(string PersonGenre, string searchString)
+            {
+                // Use LINQ to get list of genres.
+                IQueryable<string> genreQuery = from m in _context.Person
+                                                orderby m.PersonName
+                                                select m.PersonID;
+
+                var persons = from m in _context.Person
+                            select m;
+
+                if (!string.IsNullOrEmpty(searchString))
+                {
+                    persons = persons.Where(s => s.PersonName.Contains(searchString));
+                }
+
+                if (!string.IsNullOrEmpty(PersonGenre))
+                {
+                    persons = persons.Where(x => x.PersonID == PersonGenre);
+                }
+
+                var PersonGenreVM = new PersonGenreViewModel
+                {
+                    Genres = new SelectList(await genreQuery.Distinct().ToListAsync()),
+                    Persons = await persons.ToListAsync()
+                };
+
+                return View(PersonGenreVM);
+            }
 
         // GET: Person/Details/5
         public async Task<IActionResult> Details(string id)
