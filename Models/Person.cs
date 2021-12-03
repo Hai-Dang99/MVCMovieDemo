@@ -12,5 +12,6 @@ namespace MVCMovie.Models
         public string PersonID { get; set; }
         [Display(Name ="Họ và tên")]
         public string PersonName { get; set; }
+        public string Rating { get; set; }
     }
 }

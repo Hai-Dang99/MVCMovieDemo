@@ -14,5 +14,6 @@ namespace MVCMovie.Models
         public string EmployeeName { get; set; }
         [Display(Name ="Số điện thoại")]
         public string PhoneNumber { get; set; }
+        public string Rating { get; set; }
     }
 }
