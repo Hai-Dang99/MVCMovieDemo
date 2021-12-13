@@ -1,3 +1,4 @@
+using System.Net.Mime;
 using System.Data;
 using System.IO;
 using System;
@@ -19,11 +20,14 @@ namespace MVCMovie.Controllers
     {
         private readonly ApplicationDBContext _context;
         ExcelProcess _excelPro= new ExcelProcess();
-        private WriteDataToDatabse _wdtDatabase = new WriteDataToDatabse ();
-        public MoviesController(ApplicationDBContext context)
+        DataTable dt = new DataTable ();
+        
+        public MoviesController(ApplicationDBContext context, IConfiguration configuration)
         {
             _context = context;
+            Configuration = configuration;
         }
+        public IConfiguration Configuration { get; }
 
         // GET: Movies
         public async Task<IActionResult> Index(string movieGenre, string searchString)
@@ -114,14 +118,7 @@ namespace MVCMovie.Controllers
                         //_excelPro la doi tuong xu ly file excel ExcelProcess
                         var dt = _excelPro.ExcelToDataTable(fileLocation);
                         //ghi du lieu datatable vao database
-                        if (exam.Subject==0)
-                        {
-                            WriteMovie(dt);
-                        }
-                        else
-                        {
-                            WriteEnglishMovie(dt);
-                        }
+                        WriteDatatableToDatabase(dt);
                     }
                     return RedirectToAction(nameof(Index));
                 }
@@ -199,8 +196,7 @@ namespace MVCMovie.Controllers
         {
             return _context.Movie.Any(e => e.Id == id);
         }
-    }
-    private int WriteMovie(DataTable dt)
+        private int WriteDatatableToDatabase(DataTable dt)
     {
         try{
             var con = Configuration.GetConnectionString("ApplicationContext");
@@ -209,14 +205,15 @@ namespace MVCMovie.Controllers
             bulkCopy.ColumnMappings.Add(1, "Title");
             bulkCopy.ColumnMappings.Add(2,"Genre");
             bulkCopy.ColumnMappings.Add(3,"Rating");
-            bulkCopy.WriteToSever(dt);
-
+            bulkCopy.WriteToServer(dt);
+            return dt.Rows.Count;
         }
         catch
         {
             return 0;
         }
     
+    }
     }
 }
 
